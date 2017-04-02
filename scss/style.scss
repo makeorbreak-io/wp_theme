@@ -6,3 +6,11 @@
 
 @import 'header.scss';
 @import 'front-page.scss';
+@import 'single.scss';
+
+hr.separator {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    border: 2px solid $black;
+}

@@ -16,22 +16,6 @@ class F6_TOPBAR_MENU_WALKER extends Walker_Nav_Menu
         $output .= "\n$indent<ul class=\"vertical menu\" data-submenu>\n";
     }
 }
-
-//Optional fallback
-function f6_topbar_menu_fallback($args)
-{
-    /*
-     * Instantiate new Page Walker class instead of applying a filter to the
-     * "wp_page_menu" function in the event there are multiple active menus in theme.
-     */
-
-    $walker_page = new Walker_Page();
-    $fallback = $walker_page->walk(get_pages(), 0);
-    $fallback = str_replace("<ul class='children'>", '<ul class="children submenu menu vertical" data-submenu>', $fallback);
-
-    echo '<ul class="dropdown menu" data-dropdown-menu>'.$fallback.'</ul>';
-}
-
 ?>
 
 <!doctype html>
@@ -58,12 +42,10 @@ function f6_topbar_menu_fallback($args)
                 echo '<div class="top-bar"><div class="top-bar-right">';
                 wp_nav_menu(array(
                     'container' => false,
-                    'menu' => __( 'Top Bar Menu', 'textdomain' ),
+                    'menu' => 'primary',
                     'menu_class' => 'dropdown menu',
-                    'theme_location' => 'topbar-menu',
+                    'theme_location' => 'primary',
                     'items_wrap'      => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
-                    //Recommend setting this to false, but if you need a fallback...
-                    'fallback_cb' => 'f6_topbar_menu_fallback',
                     'walker' => new F6_TOPBAR_MENU_WALKER(),
                 ));
                 echo '</div></div>';

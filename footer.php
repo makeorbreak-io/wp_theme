@@ -10,5 +10,6 @@
         ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <?php wp_footer(); ?>
     </body>
 </html>
