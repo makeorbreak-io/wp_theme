@@ -1,0 +1,10 @@
+header.main {
+    position: absolute;
+    width: 100%;
+
+    .top-bar ul li > a {
+      font-size: 1.3rem;
+      color: $black;
+      font-weight: 700;
+    }
+}

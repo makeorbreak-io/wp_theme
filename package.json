@@ -4,8 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "gulp",
+    "build": "gulp sass",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "PSC <info@portosummerofcode.com> (http://portosummerofcode.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "foundation-sites": "^6.3.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.0"
+  }
 }
