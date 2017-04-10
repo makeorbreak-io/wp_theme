@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rokkitt:400,700');
+
+@font-face {
+    font-family: 'Muller';
+    src: url('fonts/Muller-ExtraBold.ttf') format('truetype'),
+}
+
 @import 'settings';
 @import 'foundation';
 
@@ -7,6 +13,7 @@
 @import 'header.scss';
 @import 'front-page.scss';
 @import 'single.scss';
+@import 'footer.scss';
 
 hr.separator {
     margin: 0;

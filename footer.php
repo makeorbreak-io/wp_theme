@@ -1,5 +1,6 @@
-    <footer>
-        <p>footer</p>
+    <footer id='footer'>
+        <p style='margin:0'><strong>Find us on <a href='https://fb.com/portosummerofcode/' target='_blank'>Facebook</a> &
+        <a href='https://twitter.com/portosummercode/' target='_blank'>Twitter</a></strong>.</p>
     </footer>
     <!-- <script src="js/plugins.js"></script>
     <script src="js/main.js"></script> -->

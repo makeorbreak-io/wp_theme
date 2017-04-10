@@ -51,7 +51,7 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #fc0,
-  secondary: #767676,
+  secondary: #0a0a0a,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -141,7 +141,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
+$anchor-color: $secondary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -251,7 +251,7 @@ $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 0.9rem,
+  default: 1.1rem,
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
