@@ -1,10 +1,4 @@
 <?php
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-?>
-
-<?php
 class F6_TOPBAR_MENU_WALKER extends Walker_Nav_Menu
 {
     /*
