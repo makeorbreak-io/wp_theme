@@ -8,7 +8,10 @@
 @import 'settings';
 @import 'foundation';
 
-@include foundation-everything; // should not make it to production like this
+// @include foundation-everything; // should not make it to production like this
+@include foundation-global-styles;
+@include foundation-typography;
+@include foundation-button;
 
 @import 'header.scss';
 @import 'front-page.scss';
