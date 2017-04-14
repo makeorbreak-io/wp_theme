@@ -23,6 +23,8 @@
 
     a.go_to_post {
         display: inline-block;
+        width: 100%;
+        min-height: 150px;
         padding: 10px;
         &:hover {
             background-color: $light-gray;
