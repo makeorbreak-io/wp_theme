@@ -1,3 +1,47 @@
 .single_post {
-    padding-top: 100px;
+    font-family: georgia, serif;
+
+    blockquote {
+        font-style: italic;
+    }
+
+    .highlight {
+        font-size: 1.3rem;
+        padding: 30px 40px;
+        font-style: italic;
+        font-weight: bold;
+        color: $dark-gray;
+    }
+
+    .inline_images {
+        text-align: center;
+        div {
+            margin: 30px;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+    .circle {
+        img {
+            border-radius: 500px;
+        }
+    }
+
+    .full_width_image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .wp-caption-text {
+        font-size: 0.8rem;
+        color: $dark-gray;
+        margin-top: 20px;
+    }
+
+    // Navigation
+    .next {
+        text-align: right;
+    }
 }
