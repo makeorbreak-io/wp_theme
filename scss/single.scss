@@ -40,8 +40,12 @@
         margin-top: 20px;
     }
 
-    // Navigation
-    .next {
-        text-align: right;
+    .navigation {
+        margin: 50px 0 0 0;
+        padding: 30px 50px;
+        background-color: $light-gray;
+        .next {
+            text-align: right;
+        }
     }
 }
