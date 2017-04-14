@@ -14,12 +14,15 @@
 @include foundation-typography;
 @include foundation-button;
 @include foundation-float-classes;
+@include foundation-menu;
+@include foundation-top-bar;
 
 
 @import 'header.scss';
 @import 'front-page.scss';
 @import 'single.scss';
 @import 'footer.scss';
+@import 'blog_home.scss';
 
 hr.separator {
     margin: 0;

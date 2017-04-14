@@ -1,0 +1,31 @@
+.blog {
+    time {
+        color: $dark-gray;
+    }
+
+    .post_preview {
+        margin-bottom: 30px;
+    }
+
+    .first_post {
+        img {
+            width: 100% !important;
+            margin-bottom: 20px;
+        }
+
+        .excerpt {
+            font-family: georgia, serif;
+            font-size: 0.9rem;
+            color: $dark-gray;
+            font-style: italic;
+        }
+    }
+
+    a.go_to_post {
+        display: inline-block;
+        padding: 10px;
+        &:hover {
+            background-color: $light-gray;
+        }
+    }
+}
