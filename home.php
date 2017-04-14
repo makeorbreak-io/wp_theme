@@ -36,3 +36,5 @@ get_header(); ?>
         </div>
     </div>
 </div>
+
+<?php get_footer(); ?>
