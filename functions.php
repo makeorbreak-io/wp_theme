@@ -7,6 +7,12 @@ function theme_slug_setup() {
     add_theme_support( 'title-tag' );
 }
 
+function wpdocs_custom_excerpt_length( $length ) {
+    return 30;
+}
+
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
 add_action( 'wp_enqueue_scripts', 'psc_scripts' );
 add_action( 'after_setup_theme', 'theme_slug_setup' );
 

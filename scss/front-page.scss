@@ -21,6 +21,41 @@
     }
 }
 
+.blog_latest {
+    margin-bottom: 50px;
+
+    a {
+        display: inline-block;
+        background-color: $primary-color;
+
+        @include breakpoint(small only) {
+            margin-bottom: 40px;
+        }
+
+    }
+
+    h4 {
+        margin-top: 60px
+    }
+
+    .separator {
+        margin-bottom: 60px;
+    }
+
+    .thumb_wrapper {
+        display: inline-block;
+        max-height: 300px;
+        width: 100%;
+        background-color: $white;
+        overflow: hidden;
+        img { width: 100% !important; }
+    }
+
+    .preview_wrapper {
+        padding: 30px;
+    }
+}
+
 .caption {
     width: 100%;
     height: 600px;
