@@ -3,7 +3,12 @@ function psc_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
 }
 
+function theme_slug_setup() {
+    add_theme_support( 'title-tag' );
+}
+
 add_action( 'wp_enqueue_scripts', 'psc_scripts' );
+add_action( 'after_setup_theme', 'theme_slug_setup' );
 
 // enable custom header
 $args = array('uploads' => true);
