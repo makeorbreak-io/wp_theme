@@ -35,6 +35,13 @@ get_header(); ?>
                 <?php endif; ?>
             </div>
         </div>
+        <div class='row'>
+            <div class='small-12 columns'>
+                <div class='pagination'>
+                    <?php echo paginate_links(array('prev_text' => '«', 'next_text' => '»')); ?>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <?php get_footer(); ?>
