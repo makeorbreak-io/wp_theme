@@ -7,9 +7,10 @@ get_header(); ?>
     <div class='blog'>
         <div class='row'>
             <div class='small-12 medium-5 medium-centered columns'>
+                <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1 ?>
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $counter++ ?>
                     <a class='go_to_post' href='<?php echo get_post_permalink(); ?>'>
-                        <?php if($counter == 1) : ?>
+                        <?php if($counter == 1 && $paged == 1) : ?>
                             <div class='row'>
                                 <div class='small-12 columns first_post'>
                                     <?php the_post_thumbnail(); ?>
