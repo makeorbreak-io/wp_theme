@@ -17,7 +17,7 @@ class F6_TOPBAR_MENU_WALKER extends Walker_Nav_Menu
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title><?php wp_title(''); ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
