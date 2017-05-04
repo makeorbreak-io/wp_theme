@@ -14,7 +14,15 @@
         margin: 0;
         margin-bottom: 20px;
         font-family: 'Muller';
-        font-size: 7.5rem;
+
+        @media screen and (max-width: 415px) {
+            font-size: 3.5rem;
+        }
+
+        @media screen and (min-width: 416px) {
+            font-size: 7.5rem;
+        }
+
         line-height: 1;
         color: $primary-color;
         font-weight: bolder;
