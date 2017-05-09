@@ -1,0 +1,177 @@
+.edition {
+
+  header.edition-header {
+    padding-top: 65px;
+    text-align: center;
+
+    h1, h2 {
+      margin: 0 auto;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 150px;
+    line-height: 2;
+  }
+
+  .theater {
+    background-color: #000;
+    padding: 20px;
+
+    video {
+      display: block;
+      margin: 0px auto;
+    }
+  }
+
+  .banner-img {
+    display: block;
+    width: 100%;
+  }
+
+  .edition-body {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+
+  .locations {
+    width: 100%;
+    overflow: auto;
+    list-style: none;
+    padding: 0;
+
+    .location {
+      width: 45%;
+      float: left;
+
+      &:first-child {
+        margin-right: 10%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .img-caption {
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  .photo-albums {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    margin: 40px auto 50px;
+    list-style: none;
+
+    .photo-album {
+      position: relative;
+      text-align: center;
+      margin: 0;
+      width: 30%;
+      float: left;
+
+      &.middle {
+        margin: 0 5%;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .overlay span {
+        position: absolute;
+        text-decoration: none;
+        text-transform: uppercase;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin-top: -30px;
+        font-size: 60px;
+        font-weight: bold;
+        color: #FFF;
+        display: none;
+      }
+
+      &:hover .overlay span {
+        display: block;
+      }
+    }
+  }
+
+  .title {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+
+  .podium {
+    display: block;
+    overflow: auto;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+
+    li {
+      width: 30%;
+      float: left;
+
+      &.student-prize {
+        float: none;
+        margin: 0 auto;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #666;
+      }
+
+      &:nth-child(1) { margin-top: 40px; }
+      &:nth-child(2) { margin: 0 5%; }
+      &:nth-child(3) { margin-top: 60px; }
+    }
+  }
+
+  .medal {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .medal::before {
+    content: "";
+    width: 12px;
+    height: 42px;
+    background: #8d457f;
+    transform: rotate(15deg);
+    position: absolute;
+    top: -42px;
+    left: 19px;
+  }
+
+  .medal::after {
+    content: "";
+    width: 12px;
+    height: 42px;
+    background: #ad589d;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: -42px;
+  }
+
+  .medal.gold   { background: #fdb23b linear-gradient(45deg, rgba(0, 0, 0, .1) 50%, transparent 50%); }
+  .medal.silver { background: #b9b7b5 linear-gradient(45deg, rgba(0, 0, 0, .1) 50%, transparent 50%); }
+  .medal.bronze { background: #d78c36 linear-gradient(45deg, rgba(0, 0, 0, .1) 50%, transparent 50%); }
+}
