@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Editions Pages
+Template Name: Generic Pages
 */
 get_header(); ?>
 
