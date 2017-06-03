@@ -7,8 +7,29 @@ header.main {
     }
 
     .top-bar ul li > a {
-      font-size: 1.3rem;
-      color: $black;
-      font-weight: 700;
+        font-size: 1.3rem;
+        color: $black;
+        font-weight: 700;
+    }
+
+    .vertical.menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+
+
+    ul.menu > li {
+        position: relative;
+
+        &:hover {
+            .vertical.menu {
+                display: inline-block;
+                background: $white;
+                width: 100%;
+            }
+        }
     }
 }
