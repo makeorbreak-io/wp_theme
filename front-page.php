@@ -5,7 +5,7 @@
     <h1 style='margin-left:-7px'>BREAK</h1>
     <hr class='separator' />
     <h2>8-10 September 2017</h2>
-    <a class='secondary button' target='_blank' href='http://eepurl.com/cKBtyr'>Tell me the news!</a>
+    <a class='large secondary button' target='_blank' href='https://makeorbreak.portosummerofcode.com'>Apply Now!</a>
 </div>
 
 <div class='blog_latest'>
