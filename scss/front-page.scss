@@ -14,6 +14,13 @@
         a:first-of-type {
             margin-right: 20px;
         }
+
+        a:last-of-type {
+            background: none;
+            color: $black;
+            text-decoration: underline;
+            font-weight: 600;
+        }
     }
 
     h1 {
