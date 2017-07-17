@@ -1,6 +1,10 @@
 .single_post {
     font-family: georgia, serif;
 
+    .content {
+        padding-top: 10px;
+    }
+
     blockquote {
         font-style: italic;
     }
