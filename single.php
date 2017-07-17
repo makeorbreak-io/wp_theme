@@ -3,7 +3,7 @@
     <div class='single_post'>
         <?php while (have_posts()) : the_post(); ?>
             <div class='row'>
-                <div class='small-12 medium-7 medium-centered columns'>
+                <div class='small-12 medium-9 medium-centered columns'>
                     <h3 class='title'><?php the_title(); ?></h3>
                     <div class='content'><?php the_content(); ?></div>
                 </div>
